@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<img src="logo.png" width="1585">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASTC Convocation Ceremony</title>
+    <link rel="stylesheet" href="ndiiy.css">
+	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASTC Convocation</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body style="background-color:Lightblue;">
+    <nav class="navbar">
+        <ul>
+            <li><a href="#timetable" style="background-color:Black;">Convocation Time Table</a></li>
+            <li><a href="#opening" style="background-color:Black;">Opening</a></li>
+            <li><a href="#awards" style="background-color:Black;">Distributing Awards</a></li>
+            <li><a href="#presentation" style="background-color:Black;">Presentations</a></li>
+            <li><a href="#closing" style="background-color:Black;">Closing</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="header">
+            <h2>EASTC CONVOCATION CEREMONY</h2>
+            <h4>Plan with figures</h4>
+        </div>
+        <div class="image-container">
+            <img src="jb.jpg" alt="Convocation Ceremony" class="blurred-image">
+            <div class="text-overlay">
+                Convocation ceremonies are designed to recognize and celebrate the hard work, dedication, and academic success of students. <br>It is a moment for graduates to receive public acknowledgment for their accomplishments.
+            </div>
+        </div>
+
+        <section id="timetable" class="section">
+            <h2>Convocation Time Table</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>09:00 AM</td>
+                    <td>Opening Ceremony</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Award Distribution</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>01:00 PM</td>
+                    <td>Presentations by Stakeholders</td>
+                </tr>
+                <tr>
+                    <td>03:00 PM</td>
+                    <td>Closing Ceremony</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="opening" class="section">
+            <h2>Opening of the Convocation</h2>
+            <p>The convocation was officially opened by the Rector. The Rector emphasized the importance of academic excellence and the role of education in shaping the future.</p>
+            <img src="rector.jpg" alt="Rector Opening Ceremony">
+        </section>
+
+        <section id="awards" class="section">
+            <h2>Distributing Awards</h2>
+            <div class="award">
+                <img src="student1.jpg" alt="Best Certificate Student">
+                <p>Best Certificate Student: John Doe</p>
+            </div>
+            <div class="award">
+                <img src="student2.jpg" alt="Best Master's Student">
+                <p>Best Diploma Student: Jane Smith</p>
+            </div>
+            <div class="award">
+                <img src="student3.jpg" alt="Best Research">
+                <p>Best Degree Student: Michael Johnson</p>
+            </div>
+            <div class="award">
+                <img src="student4.jpg" alt="Best Research">
+                <p>Best Masters student: Michael Johnson</p>
+            </div>
+            <div class="award">
+                <img src="student5.jpg" alt="Best Research">
+                <p>Best Research: Michael Johnson</p>
+            </div>
+        </section>
+
+        <section id="presentation" class="section">
+            <h2>Presentations from Stakeholders</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="stakeholder1.jpg" alt="Stakeholder 1">
+                </div>
+                <div class="mySlides fade">
+                    <img src="stakeholder2.jpg" alt="Stakeholder 2">
+                </div>
+                <div class="mySlides fade">
+                    <img src="stakeholder3.jpg" alt="Stakeholder 3">
+                </div>
+            </div>
+        </section>
+		<br/><br/>
+		
+		<h1 style="background-color:Lightblue;"><font color="Black"><u><b>PRESIDENT AND HOST OF THE CONVOCATION</b></u></font></h1>
+		<br/><br/>
+		
+        <img src="Nyambilila.jpg" height="450" width="400" align="Left">
+		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		<p>
+		<font color="Black" size="30">
+		Name: Ms. Nyambilila Minga<br/>
+		Position: President of Convocation<br/>
+		Phone: +255712345678<br/>
+		E-mail: nyambililaminga@gmail.com
+		</font>
+		</p>		
+		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <section id="closing" class="section">
+            <h2>Closing the Convocation</h2>
+            <p>The convocation was officially closed by the President of the Convocation, who congratulated all the graduates and encouraged them to strive for excellence in their future endeavors.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
